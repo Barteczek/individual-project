@@ -6,12 +6,14 @@
 
 /* Components */
 @import "components/typography";
-@import "components/sidebar-link";
-@import "components/sidebar-logo";
+@import "components/sidebar_link";
+@import "components/sidebar_logo";
 @import "components/icons";
+@import "components/section_wrapper";
 
 // /* Sections */
-// @import "section/registration_form";
+@import "sections/manager_contact";
+@import "sections/top_bar";
 
 // /* Pages / Views */
 // @import "pages/registration";

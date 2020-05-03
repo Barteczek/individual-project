@@ -2,5 +2,7 @@
   display: inline-block;
   width: 20px;
   padding: 5px 10px 0;
+  transition: $transition;
+  filter: invert(67%) sepia(0%) saturate(1%) hue-rotate(176deg) brightness(90%)
+    contrast(85%);
 }
-

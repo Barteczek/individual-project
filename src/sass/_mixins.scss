@@ -1,0 +1,37 @@
+@mixin status($status-color) {
+  width: 10px;
+  height: 10px;
+  background-color: $status-color;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+
+
+@mixin btn($btn-bg, $btn-text, $btn-border) {
+  background: $btn-bg;
+  color: $btn-text;
+  border-color: $btn-border;
+  border-radius: $radius;
+  transition: $transition;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  padding: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover {
+    background: lighten($btn-bg, 3%);
+  }
+
+  // CODE ADDED START
+  &.disabled, &[disabled] {
+    background: desaturate($btn-bg, 100%);
+    border-color: desaturate($btn-border, 100%);
+    cursor: not-allowed;
+  }
+  // CODE ADDED END
+}

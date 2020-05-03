@@ -4,7 +4,7 @@ body {
   line-height: 1.7;
   color: $color-header;
   box-sizing: border-box;
-  
+  overflow: hidden;
 }
 
 .sidebar {
@@ -16,10 +16,10 @@ body {
 
 .top-bar {
   position: fixed;
-  background-color: grey;
+  background-color: $color-light;
   height: 70px;
   width: 100%;
-  margin-left: 180px;
+  left: 180px;
   z-index: 2;
 }
 
@@ -27,7 +27,7 @@ body {
   position: absolute;
   top: 70px;
   left: 180px;
-  background: url("https://images.pexels.com/photos/3041347/pexels-photo-3041347.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-color: $color-background;
   height: 50000px;
   width: 100%;
 }

@@ -4,37 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Just do it</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CSatisfy&display=swap" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="top-bar">
-    <div class="top-bar-wrapper">
-      <div>
-        <a href="">
-          <img src="images/icons/wallet.svg" alt="">
-          <p>$1,500.00</p>
-          <img src="images/icons/arrow-down-small.svg" alt="">
-        </a>
-      </div>
-      <div>
+    <ul>
+      <li>
         <a href="#">
-          <img src="images/icons/notification.svg" alt="">
+          <img src="images/icons/wallet.svg" alt="" class="icon">
+          <span><strong>$1,500.00</strong></span>
+          <img src="images/icons/arrow-down.svg" alt="" class="icon">
         </a>
-      </div>
-      <div>
+      </li>
+      <li>
         <a href="#">
-          <img src="images/icons/login.svg" alt="">
+          <img src="images/icons/notification.svg" alt="" class="icon">
+          <span class="notification"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/icons/profile.svg" alt="" class="icon">
           <p>Leonardo Dicaprio</p>
         </a>
-      </div>
-      <div>
+      </li>
+      <li>
         <a href="#">
-          <img src="images/icons/quit.svg" alt="">
+          <img src="images/icons/quit.svg" alt="" class="icon">
         </a>
-      </div>
-    </div>
+      </li>
+    </ul>
+
   </header>
   <aside class="sidebar">
     <div class="logo-wrapper">
@@ -44,7 +46,7 @@
     <ul>
       <li>
         <a href="#">
-          <div class="icon icon-sidebar">
+          <div class="icon">
             <img src="images/icons/general.svg" alt="">
           </div>
           <span>General</span>
@@ -52,7 +54,7 @@
       </li>
       <li>
         <a href="#">
-          <div class="icon icon-sidebar">
+          <div class="icon">
             <img src="images/icons/details.svg" alt="">
           </div>
           <span>Details</span>
@@ -60,7 +62,7 @@
       </li>
       <li>
         <a href="#">
-          <div class="icon icon-sidebar">
+          <div class="icon">
             <img src="images/icons/links.svg" alt="">
           </div>
           <span>Links</span>
@@ -68,7 +70,7 @@
       </li>
       <li>
         <a href="#">
-          <div class="icon icon-sidebar">
+          <div class="icon">
             <img src="images/icons/banners.svg" alt="">
           </div>
           <span>Banners</span>
@@ -76,7 +78,7 @@
       </li>
       <li>
         <a href="#">
-          <div class="icon icon-sidebar icon-personaldata">
+          <div class="icon icon-personaldata">
             <img src="images/icons/personaldata.svg" alt="">
           </div>
           <span>Personal data</span>
@@ -84,7 +86,7 @@
       </li>
       <li>
         <a href="#">
-          <div class="icon icon-sidebar">
+          <div class="icon">
             <img src="images/icons/payout.svg" alt="">
           </div>
           <span>Payout</span>
@@ -92,26 +94,28 @@
       </li>
       <li>
         <a href="#">
-          <div class="icon icon-sidebar">
+          <div class="icon">
             <img src="images/icons/postback.svg" alt="">
           </div>
           <span>Postback</span>
         </a>
       </li>
     </ul>
-    <div>
-      <h3>Your manager</h3>
-      <div>
-        <div>
-          <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-        </div>
+    <div class="manager-contact">
+      <h2>Your manager</h2>
+      <a href="#" class="manager-contact_wrapper">
+        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        <span class="manager-status"></span>
         <p>Mikhael E.</p>
-      </div>
+      </a>
     </div>
   </aside>
   <main class="main-content-wrapper">
     <section class="general">
-
+      <h1>General statistic</h1>
+      <input type="date">
+      <input type="date">
+      <a href="#"><img src="images/icons/refresh.svg" alt="" class="icon"></a>
     </section>
     <section class="links">
       

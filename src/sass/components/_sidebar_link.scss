@@ -1,42 +1,36 @@
 .sidebar {
-
   ul {
     padding: 0;
     margin: 0;
   }
-  
-  li { 
+
+  li {
     list-style: none;
 
     a {
       width: 100%;
+      height: 30px;
       color: $color-header;
       text-decoration: none;
       display: flex;
-      align-items: center;  
-      transition: $transition;  
+      align-items: center;
+      transition: $transition;
       padding: 5px 0;
     }
 
-    .icon-sidebar {
-      filter: invert(67%) sepia(0%) saturate(1%) hue-rotate(176deg) brightness(90%) contrast(85%);
-      transition: $transition; 
-    }
-
     .icon-personaldata {
-      transform: scale(0.8)
+      transform: scale(0.8);
     }
 
     a:hover {
       background-color: lighten($color-dark, 10);
       color: $color-light;
       border-left: 4px solid $color-main;
-  
+
       .icon-sidebar {
-        filter: invert(100%) sepia(0%) saturate(1730%) hue-rotate(205deg) brightness(120%) contrast(92%);
+        filter: invert(100%) sepia(0%) saturate(1730%) hue-rotate(205deg)
+          brightness(120%) contrast(92%);
       }
     }
   }
-
-  
 }

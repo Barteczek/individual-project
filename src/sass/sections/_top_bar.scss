@@ -1,0 +1,40 @@
+.top-bar ul {
+  display: flex;
+  position: absolute;
+  right: 180px;
+  margin: 0;
+  height: 100%;
+
+  li {
+    list-style-type: none;
+    display: flex;
+    border-left: $border;
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $color-header;
+      padding: 0 10px;
+
+      p {
+        color: $color-secondary;
+      }
+
+      .icon {
+        padding-top: 0;
+        margin: 0 5px;
+      }
+
+      .notification {
+        @include status($color-warning);
+        margin-top: -10px;
+        margin-left: 25px;
+      }
+    }
+  }
+
+  a:hover {
+    background-color: $color-background;
+  };
+}
