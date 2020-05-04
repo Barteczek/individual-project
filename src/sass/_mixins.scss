@@ -7,31 +7,21 @@
   position: absolute;
 }
 
-
-
-@mixin btn($btn-bg, $btn-text, $btn-border) {
+@mixin btn($btn-bg, $btn-text) {
   background: $btn-bg;
   color: $btn-text;
-  border-color: $btn-border;
   border-radius: $radius;
   transition: $transition;
   display: inline-block;
-  border-width: 1px;
-  border-style: solid;
-  padding: 12px;
   text-decoration: none;
-  text-transform: uppercase;
   text-align: center;
+}
 
-  &:hover {
-    background: lighten($btn-bg, 3%);
-  }
-
-  // CODE ADDED START
-  &.disabled, &[disabled] {
-    background: desaturate($btn-bg, 100%);
-    border-color: desaturate($btn-border, 100%);
-    cursor: not-allowed;
-  }
-  // CODE ADDED END
+@mixin dot($dot-bg) {
+  display: inline-block;
+  background-color: $dot-bg;
+  border-radius: 50%;
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
 }

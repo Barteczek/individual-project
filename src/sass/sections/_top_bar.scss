@@ -1,8 +1,7 @@
 .top-bar ul {
   display: flex;
-  position: absolute;
-  right: 180px;
   margin: 0;
+  justify-content: flex-end;
   height: 100%;
 
   li {

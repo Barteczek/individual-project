@@ -1,0 +1,44 @@
+.links-wrapper {
+  .link-item {
+    display: grid;
+    grid-template-columns: 5fr 5fr 1fr 1fr ;
+    justify-items: start;
+    align-items: center;
+    border-bottom: $border;
+    padding: 5px 0;
+    transition: $transition;
+
+    &:first-of-type {
+      border-top: $border;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-secondary;
+
+      &:hover {
+        color: $color-main;
+      }
+    }
+
+    img {
+      padding-top: 0;
+      opacity: 0;
+    }
+
+    :nth-child(3) {
+      justify-self: end;
+      filter: invert(62%) sepia(56%) saturate(3057%) hue-rotate(348deg) brightness(100%) contrast(93%);
+    }
+
+    &:hover {
+      background-color: $color-background;
+      cursor: pointer;
+
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}
+

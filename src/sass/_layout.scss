@@ -4,7 +4,8 @@ body {
   line-height: 1.7;
   color: $color-header;
   box-sizing: border-box;
-  overflow: hidden;
+ 
+
 }
 
 .sidebar {
@@ -12,6 +13,7 @@ body {
   background-color: $color-dark;
   width: 180px;
   height: 100%;
+  z-index: 3;
 }
 
 .top-bar {
@@ -19,17 +21,15 @@ body {
   background-color: $color-light;
   height: 70px;
   width: 100%;
-  left: 180px;
   z-index: 2;
 }
 
-.main-content-wrapper {
+.main-content-wrapper { 
   position: absolute;
-  top: 70px;
-  left: 180px;
+  width: calc(100% - 180px);
+  margin: 70px 0 0 180px;
   background-color: $color-background;
-  height: 50000px;
-  width: 100%;
+  z-index: 1;
 }
 
 @media (max-width: $tablet-breakpoint) {
@@ -44,8 +44,8 @@ body {
   }
 
   .main-content-wrapper {
-    top: 70px;
-    left: 0;
+    width: 100%;
+    margin-left: 0;
   }
 }
 

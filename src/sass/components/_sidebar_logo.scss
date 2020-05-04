@@ -9,7 +9,12 @@
       text-decoration: none;
       color: $color-light;
       padding: 0 15px;
-      
     }
   }
+}
+
+@media (max-width: $tablet-breakpoint) {
+  .sidebar .logo-wrapper {
+    text-align: right;
+  }  
 }

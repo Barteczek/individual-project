@@ -1,8 +1,10 @@
 section {
   background-color: $color-light;
-  margin: 0 190px 0 10px;
-  h1 {
-    border-bottom: $border;
-    padding: 10px;
-  }
+  margin: 15px;
+}
+
+.section-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
 }

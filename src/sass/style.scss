@@ -10,10 +10,14 @@
 @import "components/sidebar_logo";
 @import "components/icons";
 @import "components/section_wrapper";
+@import "components/section_title";
+@import "components/buttons";
+@import "components/link";
 
 // /* Sections */
 @import "sections/manager_contact";
 @import "sections/top_bar";
 
 // /* Pages / Views */
-// @import "pages/registration";
+@import "pages/general";
+@import "pages/links";
