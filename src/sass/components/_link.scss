@@ -1,11 +1,11 @@
 .links-wrapper {
   .link-item {
     display: grid;
-    grid-template-columns: 5fr 5fr 1fr 1fr ;
+    grid-template-columns: 5fr 5fr 1fr ;
     justify-items: start;
     align-items: center;
     border-bottom: $border;
-    padding: 5px 0;
+    padding: 5px 10px;
     transition: $transition;
 
     &:first-of-type {
@@ -15,28 +15,29 @@
     a {
       text-decoration: none;
       color: $color-secondary;
+    }
 
-      &:hover {
-        color: $color-main;
+    .icons-wrapper {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      i {
+        color: $color-header;
+        opacity: 0;
       }
-    }
-
-    img {
-      padding-top: 0;
-      opacity: 0;
-    }
-
-    :nth-child(3) {
-      justify-self: end;
-      filter: invert(62%) sepia(56%) saturate(3057%) hue-rotate(348deg) brightness(100%) contrast(93%);
     }
 
     &:hover {
       background-color: $color-background;
       cursor: pointer;
 
-      img {
+      i {
         opacity: 1;
+      }
+
+      i:hover, a:hover {
+        color: $color-main;
       }
     }
   }

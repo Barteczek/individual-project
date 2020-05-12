@@ -1,6 +1,5 @@
 .manager-contact {
   margin-top: 40px;
-  padding: 0 10px;
   border-top: $border;
 
   &_wrapper {
@@ -8,6 +7,15 @@
     align-items: center;
     position: relative;
     text-decoration: none;
+    padding: 0 10px;
+
+    &:hover {
+      background-color: lighten($color-dark, 10);
+    }
+  }
+
+  h2 {
+    padding-left: 10px;
   }
 
   img {
@@ -20,11 +28,23 @@
   .manager-status {
     @include status($color-success);
     top: 0px;
-    left: 35px;
+    left: 45px;
   }
 
   p {
     padding-left: 15px;
     color: $color-secondary;
+  }
+}
+
+.sidebar.hide-text .manager-contact_wrapper {
+  justify-content: center;
+
+  .manager-status {
+    left: 60px;
+  }
+  
+  p {
+    display: none;
   }
 }

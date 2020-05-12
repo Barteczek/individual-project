@@ -1,44 +1,4 @@
 #general {
-  .date-picker {
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-    border-bottom: $border;
-    
-    input[type=date] {
-      border: $border;
-      padding-left: 5px;
-      color: $color-dark;
-    }
-
-    a {
-      margin-left: 10px;
-      padding: 0;
-    } 
-  }
-
-  .general-stats {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 50px 0;
-
-    div {
-      display: flex;
-      width: 40%;
-      border-bottom: $border;
-      justify-content: space-between;
-
-      >* {
-        margin-bottom: 0;
-      }
-
-      p {
-        color: $color-dark;
-      }
-    }
-  }
-
   .chart-wrapper {
     text-align: center;
     margin: 30px 0;
@@ -47,8 +7,6 @@
     justify-content: center;
     
     a {
-      margin: 20px;
-      padding: 5px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;

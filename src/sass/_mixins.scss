@@ -10,6 +10,7 @@
 @mixin btn($btn-bg, $btn-text) {
   background: $btn-bg;
   color: $btn-text;
+  border: 1px solid inherit;
   border-radius: $radius;
   transition: $transition;
   display: inline-block;
@@ -21,7 +22,7 @@
   display: inline-block;
   background-color: $dot-bg;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 10px;
   width: 15px;
   height: 15px;
 }

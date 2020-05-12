@@ -11,10 +11,22 @@
       padding: 0 15px;
     }
   }
+
+  &.hide-text {
+    .logo {
+      display: none;
+    }
+
+    .logo-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: $tablet-breakpoint) {
   .sidebar .logo-wrapper {
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
   }  
 }

@@ -1,218 +1,792 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just do it</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CSatisfy&display=swap" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="top-bar">
-    <ul>
-      <li>
-        <a href="#">
-          <img src="images/icons/wallet.svg" alt="" class="icon">
-          <span><strong>$1,500.00</strong></span>
-          <img src="images/icons/arrow-down.svg" alt="" class="icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just do it</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CSatisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <ul>
+        <li>
+          <a href="#" class="wallet">
+            <div>
+              <i class="icon-wallet"></i>$1,500.00<i class="icon-arrow-down"></i>
+            </div>
+            <div class="general-stats">
+              <div>
+                <h3>Visit Signups</h3>
+                <p>124</p>
+              </div>
+              <div>
+                <h3>Net deposit</h3>
+                <p>564</p>
+              </div>
+              <div>
+                <h3>FTD</h3>
+                <p>445</p>
+              </div>
+              <div>
+                <h3>Turn over</h3>
+                <p>432</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="icon-notification"></i><span class="notification"></span
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="icon-profile"></i>
+            <p>Leonardo Dicaprio</p></a
+          >
+        </li>
+        <li>
+          <a href="#"><i class="icon-quit"></i></a>
+        </li>
+      </ul>
+    </header>
+    <aside class="sidebar">
+      <div class="logo-wrapper">
+        <a href="#" class="logo">Just do it</a>
+        <a href="#" id="hamburger-menu"><i class="fas fa-bars"></i></a>
+      </div>
+      <ul id="sidebar-links">
+        <li class="active">
+          <a href="#general">
+            <i class="icon-general"></i><span>General</span></a>
+        </li>
+        <li>
+          <a href="#details"><i class="icon-details"></i><span>Details</span></a>
+        </li>
+        <li>
+          <a href="#links"><i class="icon-links"></i><span>Links</span></a>
+        </li>
+        <li>
+          <a href="#banners"><i class="icon-banners"></i><span>Banners</span></a>
+        </li>
+        <li>
+          <a href="#personaldata"><i class="icon-personaldata"></i><span>Personal data</span></a>
+        </li>
+        <li>
+          <a href="#payout"><i class="icon-payout"></i><span>Payout</span></a>
+        </li>
+        <li>
+          <a href="#postback"><i class="icon-postback"></i><span>Postback</span></a>
+        </li>
+      </ul>
+      <div class="manager-contact">
+        <h2>Your manager</h2>
+        <a href="#" class="manager-contact_wrapper">
+          <img
+            src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <span class="manager-status"></span>
+          <p>Mikhael E.</p>
         </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/icons/notification.svg" alt="" class="icon">
-          <span class="notification"></span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/icons/profile.svg" alt="" class="icon">
-          <p>Leonardo Dicaprio</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/icons/quit.svg" alt="" class="icon">
-        </a>
-      </li>
-    </ul>
+      </div>
+    </aside>
+    <main class="main-content-wrapper">
+      <section id="general" class="active">
+        <h1 class="section-title">General statistic</h1>
+        <div class="date-picker-wrapper">
+          <div class="date-picker">
+            <input type="date" />
+            <input type="date" />
+            <i class="icon-calendar"></i>
+          </div>
+          <a href="#" class="btn-orange"><i class="icon-refresh"></i></a>
+        </div>
+        <div class="section-wrapper">
+          <div class="general-stats">
+            <div>
+              <h3>Visit Signups</h3>
+              <p>124</p>
+            </div>
+            <div>
+              <h3>Net deposit</h3>
+              <p>564</p>
+            </div>
+            <div>
+              <h3>FTD</h3>
+              <p>445</p>
+            </div>
+            <div>
+              <h3>Turn over</h3>
+              <p>432</p>
+            </div>
+          </div>
+          <div>
+            <h3>Earnings chart</h3>
+            <div class="chart-wrapper">
+              <a href="#" class="tab-btn"
+                ><span class="dot-blue"></span>Signups</a
+              >
+              <a href="#" class="tab-btn"
+                ><span class="dot-orange"></span>FTD</a
+              >
+              <a href="#" class="tab-btn active"
+                ><span class="dot-green"></span>Earned</a
+              >
+              <img src="images/chart.png" alt="chart" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="links" class="active">
+        <h1 class="section-title">Links</h1>
+        <div class="section-wrapper">
+          <a href="#" class="btn-orange">+ add new</a>
+          <div class="links-wrapper">
+            <div class="link-item">
+              <h3>Home page</h3>
+              <a href="#">http://www.homepage.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Currently offer</h3>
+              <a href="#">http://www.currently.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Blurpix</h3>
+              <a href="#">http://www.blurpix.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Your Site</h3>
+              <a href="#">http://www.yoursite.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Google</h3>
+              <a href="#">http://www.google.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Facebook</h3>
+              <a href="#">http://www.facebook.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Dashboard</h3>
+              <a href="#">http://www.dashboard.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Piece of Wine</h3>
+              <a href="#">http://www.pieceofwine.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Twitter</h3>
+              <a href="#">http://www.twitter.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn-orange">+ add new</a>
+        </div>
+      </section>
+      <section id="details">
+        <h1 class="section-title">Detail statistic</h1>
+        <div class="date-picker-wrapper">
+          <div class="date-picker">
+            <input type="date" />
+            <input type="date" />
+            <i class="icon-calendar"></i>
+          </div>
+          <a href="#" class="btn-orange"><i class="icon-refresh"></i></a>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Tracker name<i class="icon-arrow-up-small"></i></th>
+                <th>Initated date<i class="icon-arrow-up-small"></i></th>
+                <th>Visits<i class="icon-arrow-up-small"></i></th>
+                <th>Unique<i class="icon-arrow-up-small"></i></th>
+                <th>Signups<i class="icon-arrow-up-small"></i></th>
+                <th>FTD<i class="icon-arrow-up-small"></i></th>
+                <th>Depositors<i class="icon-arrow-up-small"></i></th>
+                <th>Deposits ($)<i class="icon-arrow-up-small"></i></th>
+                <th>Payout ($)<i class="icon-arrow-up-small"></i></th>
+                <th>Turnover<i class="icon-arrow-up-small"></i></th>
+                <th>Deal<i class="icon-arrow-up-small"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <a href="#"><i class="icon-arrow-left"></i></a>
+          <div class="pages">
+          </div>
+          <a href="#"><i class="icon-arrow-right"></i></a>
+        </div>
 
-  </header>
-  <aside class="sidebar">
-    <div class="logo-wrapper">
-      <a href="#" class="logo">Just do it</a>
-      <a href="#"><i class="fas fa-bars"></i></a>
-    </div>
-    <ul>
-      <li class="active">
-        <a href="#">
-          <div class="icon">
-            <img src="images/icons/general.svg" alt="">
-          </div>
-          <span>General</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div class="icon">
-            <img src="images/icons/details.svg" alt="">
-          </div>
-          <span>Details</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div class="icon">
-            <img src="images/icons/links.svg" alt="">
-          </div>
-          <span>Links</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div class="icon">
-            <img src="images/icons/banners.svg" alt="">
-          </div>
-          <span>Banners</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div class="icon icon-personaldata">
-            <img src="images/icons/personaldata.svg" alt="">
-          </div>
-          <span>Personal data</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div class="icon">
-            <img src="images/icons/payout.svg" alt="">
-          </div>
-          <span>Payout</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div class="icon">
-            <img src="images/icons/postback.svg" alt="">
-          </div>
-          <span>Postback</span>
-        </a>
-      </li>
-    </ul>
-    <div class="manager-contact">
-      <h2>Your manager</h2>
-      <a href="#" class="manager-contact_wrapper">
-        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-        <span class="manager-status"></span>
-        <p>Mikhael E.</p>
-      </a>
-    </div>
-  </aside>
-  <main class="main-content-wrapper">
-    <section id="general">
-      <h1 class="section-title">General statistic</h1>
-      <div class="date-picker">
-        <input type="date">
-        <input type="date">
-        <a href="#" class="btn-orange"><img src="images/icons/refresh.svg" alt="" class="icon icon-light"></a>
-      </div>
-      <div class="section-wrapper">
-        <div class="general-stats">
-          <div>
-            <h3>Visit Signups</h3>
-            <p>124</p>
-          </div>
-          <div>
-            <h3>Net deposit</h3>
-            <p>564</p>
-          </div>
-          <div>
-            <h3>FTD</h3>
-            <p>445</p>
-          </div>
-          <div>
-            <h3>Turn over</h3>
-            <p>432</p>
-          </div>
-        </div>
-        <div>
-          <h3>Earnings chart</h3>
-          <div class="chart-wrapper">
-            <a href="#" class="tab-btn"><span class="dot-blue"></span>Signups</a>
-            <a href="#" class="tab-btn"><span class="dot-orange"></span>FTD</a>
-            <a href="#" class="tab-btn active"><span class="dot-green"></span>Earned</a>
-            <img src="images/chart.png" alt="chart">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="links">
-      <h1 class="section-title">Links</h1>
-      <div class="section-wrapper">
-        <a href="#" class="btn-orange">+ add new</a>
-        <div class="links-wrapper">
-          <div class="link-item">
-            <h3>Home page</h3>
-            <a href="#">http://www.homepage.com</a>
-            <img src="images/icons/links.svg" alt="" class="icon">
-            <img src="images/icons/trash.svg" alt="" class="icon">
-          </div>
-          <div class="link-item">
-            <h3>Currently offer</h3>
-            <a href="#">http://www.currently.com</a>
-            <img src="images/icons/links.svg" alt="" class="icon">
-            <img src="images/icons/trash.svg" alt="" class="icon">
-          </div>
-          <div class="link-item">
-            <h3>Blurpix</h3>
-            <a href="#">http://www.blurpix.com</a>
-            <img src="images/icons/links.svg" alt="" class="icon">
-            <img src="images/icons/trash.svg" alt="" class="icon">
-          </div>
-          <div class="link-item">
-            <h3>Your Site</h3>
-            <a href="#">http://www.yoursite.com</a>
-            <img src="images/icons/links.svg" alt="" class="icon">
-            <img src="images/icons/trash.svg" alt="" class="icon">
-          </div>
-          <div class="link-item">
-            <h3>Google</h3>
-            <a href="#">http://www.google.com</a>
-            <img src="images/icons/links.svg" alt="" class="icon">
-            <img src="images/icons/trash.svg" alt="" class="icon">
-          </div>
-          <div class="link-item">
-            <h3>Facebook</h3>
-            <a href="#">http://www.facebook.com</a>
-            <img src="images/icons/links.svg" alt="" class="icon">
-            <img src="images/icons/trash.svg" alt="" class="icon">
-          </div>
-          <div class="link-item">
-            <h3>Dashboard</h3>
-            <a href="#">http://www.dashboard.com</a>
-            <img src="images/icons/links.svg" alt="" class="icon">
-            <img src="images/icons/trash.svg" alt="" class="icon">
-          </div>
-          <div class="link-item">
-            <h3>Piece of Wine</h3>
-            <a href="#">http://www.pieceofwine.com</a>
-            <img src="images/icons/links.svg" alt="" class="icon">
-            <img src="images/icons/trash.svg" alt="" class="icon">
-          </div>
-          <div class="link-item">
-            <h3>Twitter</h3>
-            <a href="#">http://www.twitter.com</a>
-            <img src="images/icons/links.svg" alt="" class="icon">
-            <img src="images/icons/trash.svg" alt="" class="icon">
-          </div>
-        </div>
-
-        <a href="#" class="btn-orange">+ add new</a>
-      </div>
-    </section>
-  </main>
-  
-</body>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>

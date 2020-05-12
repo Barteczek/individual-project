@@ -14,26 +14,67 @@
       align-items: center;
       text-decoration: none;
       color: $color-header;
-      padding: 0 10px;
-
-      p {
-        color: $color-secondary;
+      font-weight: 600;
+      font-size: 20px;
+      
+      i {
+        padding: 0 15px;
       }
 
-      .icon {
-        padding-top: 0;
-        margin: 0 5px;
+      p {
+        font-weight: 400;
+        color: $color-secondary;
+        margin: 0;
+        padding-right: 15px;
+        font-size: 14px;
       }
 
       .notification {
-        @include status($color-warning);
-        margin-top: -10px;
-        margin-left: 25px;
+        @include status($color-main);
+        margin-top: -13px;
+        margin-left: 26px;
+      }
+    }
+  }  
+
+  .wallet {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  
+    .general-stats {
+      flex-direction: column;
+      width: 100%;
+      margin: 20px 0 0 0 ;
+      display: none;
+    }
+
+    .general-stats div {
+      width: 100%;
+      align-items: center;
+        
+      p {
+        color: $color-dark;
+      }
+
+      >* {
+        margin: 10px;
+      }
+    }
+  
+
+    &.active {
+      height: 200px;
+      background-color: $color-light;
+
+      .general-stats {
+        margin: 20px 0 0 0 ;
+        display: block;
       }
     }
   }
 
   a:hover {
     background-color: $color-background;
-  };
+  }
 }

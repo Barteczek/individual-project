@@ -1,0 +1,32 @@
+.date-picker-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0;
+  border-bottom: $border;
+
+  .date-picker {
+    display: grid;
+    grid-template-columns: auto auto 30px;
+    border: $border;
+    border-radius: $radius;
+
+    input {
+      border: none;
+      margin: 7px 0 7px 15px;
+      color: $color-header;
+
+      &:first-of-type {
+        border-right: $border;
+      }
+    }
+
+    i {
+      align-self: center;
+    }
+  }
+
+  a {
+    margin-left: 10px;
+  } 
+}

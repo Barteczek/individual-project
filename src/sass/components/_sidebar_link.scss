@@ -5,45 +5,39 @@
   }
 
   li {
-    list-style: none;
-    overflow: hidden;
+    display: flex;
+    margin: 5px 0;
+    padding: 10px;
+    align-items: center;
+    transition: $transition;
+    cursor: pointer;
 
     a {
-      width: 100%;
-      height: 30px;
-      color: $color-header;
       text-decoration: none;
-      display: flex;
-      align-items: center;
-      transition: $transition;
-      padding: 5px 0;
+      color: $color-header;
+      font-size: 14px;
+
+      i {
+        padding: 0 10px;
+      }
     }
 
-    .icon-personaldata {
-      transform: scale(0.8);
-    }
-
-    a:hover {
+    &:hover, &.active {
       background-color: lighten($color-dark, 10);
-      color: $color-light;
       border-left: 4px solid $color-main;
-
-      .icon-sidebar {
-        filter: invert(100%) sepia(0%) saturate(1730%) hue-rotate(205deg)
-          brightness(120%) contrast(92%);
+      
+      a {
+        color: $color-light;
       }
     }
+  }
 
-    &.active {
-      a {
-        background-color: lighten($color-dark, 10);
-        color: $color-light;
-        border-left: 4px solid $color-main;
-      }
+  &.hide-text {
+    li {
+      justify-content: center;
       
-      .icon-sidebar {
-        filter: invert(100%) sepia(0%) saturate(1730%) hue-rotate(205deg)
-          brightness(120%) contrast(92%);
+      i {
+        font-size: 20px;
       }
     }
   }
@@ -53,4 +47,10 @@
   .sidebar  ul, .manager-contact {
     display: none;
   }  
+
+  .sidebar.active {
+    >* {
+      display: block;
+    }
+  }
 }
