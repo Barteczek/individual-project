@@ -52,6 +52,21 @@ body {
 
   .top-bar {
     display: none;
+
+    &.active {
+      display: block;
+      bottom: 0;
+      z-index: 999;
+
+      ul {
+        justify-content: flex-start;
+        padding-left: 10px;
+      }
+
+      .wallet {
+        display: none;
+      }
+    }
   }
 
   .main-content-wrapper {

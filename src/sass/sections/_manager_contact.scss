@@ -1,5 +1,6 @@
 .manager-contact {
-  margin-top: 40px;
+  margin-top: 20px;
+  padding-top: 20px;
   border-top: $border;
 
   &_wrapper {
@@ -7,7 +8,7 @@
     align-items: center;
     position: relative;
     text-decoration: none;
-    padding: 0 10px;
+    padding: 5px 10px;
 
     &:hover {
       background-color: lighten($color-dark, 10);
@@ -27,7 +28,7 @@
   
   .manager-status {
     @include status($color-success);
-    top: 0px;
+    top: 5px;
     left: 45px;
   }
 
@@ -37,14 +38,21 @@
   }
 }
 
-.sidebar.hide-text .manager-contact_wrapper {
-  justify-content: center;
-
-  .manager-status {
-    left: 60px;
-  }
-  
-  p {
+.sidebar.hide-text .manager-contact {
+  h2 {
     display: none;
+  }
+
+  &_wrapper {
+    justify-content: center;
+    
+
+    .manager-status {
+      left: 60px;
+    }
+    
+    p {
+      display: none;
+    }
   }
 }

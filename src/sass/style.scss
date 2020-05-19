@@ -18,6 +18,8 @@
 @import "components/date_picker";
 @import "components/general_stats";
 @import "components/section_activation";
+@import "components/form";
+@import "components/modals";
 
 // /* Sections */
 @import "sections/manager_contact";
@@ -25,5 +27,5 @@
 
 // /* Pages / Views */
 @import "pages/general";
-@import "pages/links";
-@import "pages/details";
+@import "pages/links_banners";
+@import "pages/details_payout";

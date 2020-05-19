@@ -1,12 +1,13 @@
 .links-wrapper {
   .link-item {
     display: grid;
-    grid-template-columns: 5fr 5fr 1fr ;
+    grid-template-columns: 3fr 5fr 1fr ;
     justify-items: start;
     align-items: center;
     border-bottom: $border;
     padding: 5px 10px;
     transition: $transition;
+    text-align: left;
 
     &:first-of-type {
       border-top: $border;
@@ -41,5 +42,17 @@
       }
     }
   }
+}
+
+@media(max-width: $phone-breakpoint){
+  .links-wrapper {
+    .link-item {
+      grid-template-columns: 1fr;
+
+      .icons-wrapper {
+        display: none;
+      }
+    }  
+  }  
 }
 

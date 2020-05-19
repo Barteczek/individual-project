@@ -4,6 +4,7 @@
   text-align: center;
   padding: 50px 0;
   border-bottom: $border;
+  margin: 0;
 
   .date-picker {
     display: grid;
@@ -29,4 +30,29 @@
   a {
     margin-left: 10px;
   } 
+}
+
+@media (max-width: $phone-breakpoint) {
+  .date-picker-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    .date-picker {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      border: none;
+
+      input {
+        border: $border;
+        border-radius: $radius;
+        margin: 0 0 20px 0;
+        padding: 5px;
+      }
+
+      i {
+        display: none;
+      }
+    }
+  }
 }

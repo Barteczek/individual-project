@@ -8,6 +8,16 @@
   }
 }
 
+.btn-grey {
+  @include btn($color-header, $color-light);  
+  padding: 10px 11px;
+  line-height: 1;
+  
+  &:hover {
+    background-color: lighten($color-header, 10);
+  }
+}
+
 .tab-btn {
   @include btn($color-background, $color-header);
   padding: 10px;
