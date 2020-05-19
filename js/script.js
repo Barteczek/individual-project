@@ -1,4 +1,5 @@
 /* global Chart */
+
 {
   ('use strict');
 
@@ -239,6 +240,7 @@
 
   const ctx = document.getElementById('myChart').getContext('2d');
 
+  // eslint-disable-next-line 
   const chart = new Chart(ctx, {
     // 1
     type: 'bar',
