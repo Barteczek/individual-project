@@ -2,6 +2,7 @@
 
 {
   ('use strict');
+  const MOBILE_BREAKPOINT = 768;
 
   const select = {
     hamburgerMenu: '#hamburger-menu',
@@ -42,30 +43,14 @@
     const hambMenu = document.querySelector(select.hamburgerMenu);
     const sidebar = document.querySelector(select.sidebar);
     const mainWrapper = document.querySelector(select.mainWrapper);
-    const sidebarLinks = document.querySelectorAll(select.sidebarLinksTexts);
     const topBar = document.querySelector(select.topBar);
-
-    const sidebarLinksText = [];
-
-    for (let link of sidebarLinks) {
-      sidebarLinksText.push(link.innerText);
-    }
 
     hambMenu.addEventListener('click', function (event) {
       event.preventDefault();
 
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > MOBILE_BREAKPOINT) {
         sidebar.classList.toggle(classNames.hideText);
         mainWrapper.classList.toggle(classNames.hideText);
-        let i = 0;
-        for (let link of sidebarLinks) {
-          if (link.innerText === '') {
-            link.innerText = sidebarLinksText[i];
-            i++;
-          } else {
-            link.innerText = '';
-          }
-        }
       } else {
         sidebar.classList.toggle(classNames.active);
         topBar.classList.toggle(classNames.active);
@@ -126,7 +111,7 @@
     const sidebar = document.querySelector(select.sidebar);
     const topBar = document.querySelector(select.topBar);
 
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= MOBILE_BREAKPOINT) {
       sidebar.classList.remove(classNames.active);
       topBar.classList.remove(classNames.active);
     }
